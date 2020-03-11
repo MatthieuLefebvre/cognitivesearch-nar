@@ -1,0 +1,45 @@
+# To create the conda environment:
+# $ conda env create -f environment.yml
+# 
+# To update the conda environment:
+# $ conda env update -f environment.yml
+# 
+# To register the conda environment in Jupyter:
+# $ conda activate narsearch
+# $ python -m ipykernel install --user --name narsearch
+#
+# To remove the Jupyter kernal
+# $ jupyter kernelspec uninstall narsearch
+# 
+# To remove the conda enviroment in python
+# $ conda deactivate narsearch
+# $ conda remove --name narsearch --all
+
+
+name: narsearch
+channels:
+  - conda-forge
+dependencies:
+# requires
+- python>=3.5
+- ipykernel>=4.6.1
+- jupyter>=1.0.0
+- numpy
+- pandas
+- Pillow
+- PyPDF2
+- requests
+- pytest
+- pylint
+- matplotlib
+- fuzzywuzzy
+- papermill
+- poppler
+- pip
+- pip:
+  - PyMuPDF
+  - opencv-python
+  - pdf2image
+  - azure
+  - azure-cosmos
+  - azure-storage-blob
