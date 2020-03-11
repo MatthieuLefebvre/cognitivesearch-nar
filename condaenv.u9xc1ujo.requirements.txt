@@ -1,6 +1,0 @@
-PyMuPDF
-opencv-python
-pdf2image
-azure
-azure-cosmos
-azure-storage-blob
